@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+padding: 0;
+}
+body{
+  height: 1000vh;
+  background-color: #161513;
+  color: beige;
+  font-family: "outfit";
+}

@@ -1,0 +1,127 @@
+.Services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   gap: 80px;
+    margin: 80px 170px;
+}
+.Service-title{
+    position: relative;
+
+}
+.Service-title h1{
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 700;
+    
+}
+.Service-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #df8908 -5.09%, #8415ff 106.09%);
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;display: flex;
+}
+.Service-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.Service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.Service-format h3{
+font-size: 28px;
+font-weight: 600;
+}
+.Service-format h2{
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #df8908 -5.09%, #8415ff 106.09%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+
+}
+.Service-format p{
+    font-size: 24px;
+    line-height: 40px;
+    color: #d4d4d4;
+    min-width: 300px;
+}
+.Service-readmore{
+display: flex;
+gap: 20px;
+align-items: center;
+margin-top: 20px;
+}
+.Service-format:hover{
+    background: linear-gradient(45deg, #561010, #822c22);
+    color: white;
+    border: 2px solid #ff00ff;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.Service-readmore a{
+    font-size: 24px;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .Services{
+        align-items:flex-start;
+        gap: 70px;
+        margin: 20px 70px
+    }
+    .Service-title h1{
+        padding: 0;
+        font-size:56px;
+    }
+    
+    .Service-format{
+        gap: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid white;
+        transition: 0.4s;
+        cursor: pointer;
+        width: 70%;
+        text-align: center;
+    }
+    .Service-format h2{
+        font-size: 20px;
+    }
+    .Service-format p{
+        font-size: 10px;
+        line-height: 20px;
+        max-width: 100px;
+        padding-left:10px ;
+    }
+    .Service-readmore img{
+        width: 10px;
+        padding-right: 100%;
+    }
+    .Service-container{
+        grid-template-columns:repeat(2,1fr) ;
+        gap: 30px;
+    }
+    }
