@@ -19,7 +19,7 @@ const About = () => {
         <div className='about-right'>
           <div className='about-para'>
             <p>
-              I’m <strong>Eleazar Dady Mboumeu Youbi</strong>, a Full-Stack Developer
+              I’m <strong>Eleazear Dady Mboumeu Youbi</strong>, a Full-Stack Developer
               based in Ebolowa, Cameroon. I build complete web applications,
               working across both frontend and backend, with a focus on clean
               code, performance, and practical solutions.
