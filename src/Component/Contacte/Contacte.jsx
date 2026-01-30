@@ -1,6 +1,5 @@
 import React from 'react'
 import './Contacte.css'
-import download from '../../assets/download.jpg'
 import Email from '../../assets/email-svgrepo-com.svg'
 import telephone from '../../assets/phone-plus-alt-svgrepo-com.svg'
 import Maptres from '../../assets/map-icon.svg'

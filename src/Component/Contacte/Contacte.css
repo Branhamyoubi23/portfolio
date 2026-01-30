@@ -174,7 +174,7 @@
         padding: 0;
         font-size: 50px;
         font-weight: 600;
-        background-image:url('/assets/download.jpg');
+        background-image:url('../../assets/download.jpg');
         -webkit-background-clip:text;
         -webkit-text-fill-color: transparent;
         background-size: cover;

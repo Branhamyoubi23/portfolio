@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+import './footer.css'
 import logo1 from '../../assets/logo1.jpg'
 import user from '../../assets/user.svg'
 
