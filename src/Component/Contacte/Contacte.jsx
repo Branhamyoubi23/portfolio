@@ -35,7 +35,6 @@ const Contacte = () => {
     <div className='contact' id='contact'>
     <div className='contact-title'>
       <h1>Get in touch</h1>
-      <img src={download} alt="" id='its' />
       </div>
       <div className='contact-section'>
         <div className='contact-left'>
@@ -44,11 +43,11 @@ const Contacte = () => {
           <div className='contact-details'>
             <div className='contact-detail'>
             <img src={Email}/>
-            <p>Halo-developer@gmail.com</p>
+            <p>branhamyoubi31@gmail.com</p>
             </div>
             <div className='contact-detail'>
             <img src={telephone}/>
-            <p>+123457890</p>
+            <p>+237688833390</p>
 
             </div>
             <div className='contact-detail'>

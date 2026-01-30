@@ -1,36 +1,41 @@
-.Services{
+.Services {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   gap: 80px;
+    gap: 80px;
     margin: 80px 170px;
 }
-.Service-title{
-    position: relative;
 
+.Service-title {
+    position: relative;
 }
-.Service-title h1{
+
+.Service-title h1 {
     padding: 0 30px;
     font-size: 80px;
     font-weight: 700;
-    
+    color: white;
 }
-.Service-title img{
+
+.Service-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(270deg, #df8908 -5.09%, #8415ff 106.09%);
-    border-radius: 10px;
-    color: white;
-    font-size: 24px;display: flex;
+    width: 150px;
+    height: auto;
+    border-radius: 40px;
 }
-.Service-format{
+
+.Service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.Service-format {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,87 +46,165 @@
     border: 2px solid white;
     transition: 0.4s;
     cursor: pointer;
-
 }
 
-.Service-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 80px;
+.Service-format h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
 }
-.Service-format h3{
-font-size: 28px;
-font-weight: 600;
-}
-.Service-format h2{
+
+.Service-format h2 {
     font-size: 38px;
     font-weight: 800;
     background: linear-gradient(270deg, #df8908 -5.09%, #8415ff 106.09%);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent
-
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    text-align: center;
 }
-.Service-format p{
+
+.Service-format p {
     font-size: 24px;
     line-height: 40px;
     color: #d4d4d4;
-    min-width: 300px;
+    margin: 0;
+    text-align: center;
 }
-.Service-readmore{
-display: flex;
-gap: 20px;
-align-items: center;
-margin-top: 20px;
+
+.Service-readmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
 }
-.Service-format:hover{
+
+.Service-readmore p {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.Service-readmore img {
+    width: 24px;
+    height: 24px;
+}
+
+.Service-format:hover {
     background: linear-gradient(45deg, #561010, #822c22);
     color: white;
     border: 2px solid #ff00ff;
     transform: scale(1.05);
     transition: 0.4s;
 }
-.Service-readmore a{
-    font-size: 24px;
-    font-weight: 600;
-}
-@media (max-width: 768px) {
-    .Services{
-        align-items:flex-start;
-        gap: 70px;
-        margin: 20px 70px
-    }
-    .Service-title h1{
-        padding: 0;
-        font-size:56px;
+
+@media (max-width: 1200px) {
+    .Services {
+        margin: 80px 100px;
     }
     
-    .Service-format{
+    .Service-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .Services {
+        align-items: flex-start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+    
+    .Service-title h1 {
+        padding: 0;
+        font-size: 56px;
+    }
+    
+    .Service-title img {
+        width: 150px;
+    }
+    
+    .Service-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 100%;
+    }
+    
+    .Service-format {
         gap: 10px;
         padding: 10px;
         border-radius: 10px;
         border: 2px solid white;
-        transition: 0.4s;
-        cursor: pointer;
-        width: 70%;
-        text-align: center;
+        width: 100%;
+        min-height: 250px;
     }
-    .Service-format h2{
+    
+    .Service-format h3 {
         font-size: 20px;
     }
-    .Service-format p{
-        font-size: 10px;
-        line-height: 20px;
-        max-width: 100px;
-        padding-left:10px ;
+    
+    .Service-format h2 {
+        font-size: 28px;
     }
-    .Service-readmore img{
-        width: 10px;
-        padding-right: 100%;
+    
+    .Service-format p {
+        font-size: 16px;
+        line-height: 24px;
+        min-width: auto;
     }
-    .Service-container{
-        grid-template-columns:repeat(2,1fr) ;
-        gap: 30px;
+    
+    .Service-readmore p {
+        font-size: 18px;
     }
+    
+    .Service-readmore img {
+        width: 16px;
+        height: 16px;
     }
+}
+
+@media (max-width: 600px) {
+    .Services {
+        margin: 20px 40px;
+    }
+    
+    .Service-title h1 {
+        font-size: 48px;
+    }
+    
+    .Service-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .Service-format {
+        min-height: 220px;
+    }
+    
+    .Service-format h2 {
+        font-size: 24px;
+    }
+    
+    .Service-format p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Services {
+        margin: 20px 20px;
+        gap: 50px;
+    }
+    
+    .Service-title h1 {
+        font-size: 40px;
+    }
+    
+    .Service-title img {
+        width: 120px;
+    }
+}
